@@ -3,11 +3,11 @@ class BandasController < ApplicationController
 
   def index
     @bandas = Banda.all
-    render json: @bandas, include: [:musicos, :musicas, :albuns]
+    render json: @bandas, include: [:musicos, :musicas, :albums]
   end
 
   def show
-    render json: @banda, include: [:musicos, :musicas, :albuns]
+    render json: @banda, include: [:musicos, :musicas, :albums]
   end
 
   def create
