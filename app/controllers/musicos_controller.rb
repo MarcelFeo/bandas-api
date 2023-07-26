@@ -1,0 +1,2 @@
+class MusicosController < ApplicationController
+end
